@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block title %}
+contact
+
+{% endblock title %}
+
+{% block body %}
+<div class="container-fluid mx-0">
+    <img src="https://source.unsplash.com/1400x800/?phone" class="d-block w-100" alt="...">
+
+    <form method="post" action="/contact">
+      {% csrf_token %}
+      <div class="mb-3">
+        <label for="Name" class="form-label">Name</label>
+        <input type="Name" class="form-control" id="Name" name="Name" aria-describedby="Name">
+        <div id="Name" name="Name" class="form-text">We'll never share your UserName with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="Phone" class="form-label">Phone</label>
+        <input type="phone" class="form-control" id="phone" name="Phone" aria-describedby="phone">
+        <div id="phone" name="Phone" class="form-text">We'll never share your phone number with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="Email" aria-describedby="email">
+        <div id="email" name="Email" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">E-Mail</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Social Media</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Phone</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Thank You!!!</a></li>
+          </ul>
+          <p class="text-center text-muted">© 2022 Company, Inc</p>
+        </footer>
+      </div>
+
+</div>
+<div>
+{% endblock body %}
