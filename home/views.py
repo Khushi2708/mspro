@@ -25,6 +25,6 @@ def course(request):
     return render(request, "course.html")    
 def company(request):
     return render(request, "company.html")
-def updates(request):
+
    
 
