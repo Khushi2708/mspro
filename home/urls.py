@@ -11,6 +11,5 @@ urlpatterns = [
     path("college", views.college, name='college'),
     path("course", views.course, name='course'),
     path("company", views.company, name='company'),
-    path("updates", views.updates, name='updates'),
-    path("jobrary", views.jobrary, name='jobrary'),
+    
 ] 
