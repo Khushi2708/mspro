@@ -26,7 +26,5 @@ def course(request):
 def company(request):
     return render(request, "company.html")
 def updates(request):
-    return render(request, "updates.html")
-def jobrary(request):
-    return render(request, 'index.html')
+   
 
